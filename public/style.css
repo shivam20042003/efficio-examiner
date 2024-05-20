@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.logoPr{
+    font-family: 'League Spartan';
+    font-size: xx-large;
+    font-weight: 5000;
+    display: flex;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+#front{
+    color: #00BF63;
+    padding-top: 2px;
+}
+#backbg{
+    background-color: #00BF63;
+    position: absolute;
+    z-index: -1;
+    height:32px;
+    width: 38px;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    transform: skew(-23deg);
+    border-radius: 5px;
+}
+#back{
+    color:white;
+    padding-top: 2px;
+}
+body{
+    font-family: 'League Spartan';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 5vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    font-size: 18px;
+    font-weight:bolder;
+    background-color: white;
+}
+.withlogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: normal;
+    
+}
+.logo{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why{
+    opacity: 50%;
+    height: 4vmin;
+    color: #178855;
+    width: 150px;
+}
+.why:hover{
+    opacity: 100%;
+}
+
+.notwithlogo{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right:100px ;
+    
+}
+.signup{
+    background-color:#178855;
+    color: white;
+    font-size: large;
+    height: 40px;
+    border-radius: 2%;
+    width: 150px;
+}
+.signup:hover{
+    background-color: #00BF63;
+}
+
+.login{
+    height: 4vmin;
+    font-size: medium;
+    width: 150px;
+    color:#178855;
+}
+.login:hover{
+    background-color: rgba(240, 240, 240, 0.644);
+}
+.menu{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu-bar{
+    visibility: hidden;
+    height: 1px;
+    width: 5px;
+}
+.msdropmenu{
+    position: fixed;
+    z-index: 1000;
+    margin-top: 5vmax;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: left;
+    visibility: hidden;
+}
+.dropmenu{
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    width: 150px; 
+}
+.menu-why{
+    opacity: 50%;
+    height: 40px;
+    color: black;
+    width: 150px;
+    border-bottom: 0.1px solid;
+}
+.menu-login{
+    height: 40px;
+    font-size: medium;
+    color: black;
+    width: 150px;
+}
+.menu-why:hover{
+    opacity: 100%
+}
+.hero-contan{
+    margin-top: 7vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    color: #178855;
+}
+.half1{
+    width: 38vw;
+}
+img{
+    height: 2vmax;
+    width: 3vmax;
+    margin-right:1vmin ;
+}
+.examiner{
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+}
+.tag{
+    margin-top: 5vmin;
+    font-size: 70px;
+}
+.line{
+    margin-top: 9vmin;
+    font-size: medium;
+}
+.signup2{
+    background-color:#178855;
+    color: white;
+    font-size: large;
+    height: 50px;
+    border-radius: 2%;
+    margin-top: 9vmin;
+    width: 150px;
+}
+.signup2:hover{
+    background-color: #00BF63;
+}
+.half2{
+    height: 40vmax;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imghalf{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+#imghalf2{
+    width: 80%;
+    height: auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.Aboutus{
+    height: 40vmax;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.891);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:end;
+}
+footer{
+    width: 80vmax;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    margin-top: 72px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.social{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.copy-right-div{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 80vmax;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+}
+.left-copy-right-div{
+    opacity: 50%;
+}
+.right-side-copy-right-div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vmax;
+    flex-direction: row;
+}
+.copy-right-div-link{
+    opacity: 50%;
+    color: white;
+}
+.copy-right-div-link:hover{
+    opacity: 100%;
+}
+.logsign{
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 2000;
+    margin-top: 100px;
+    position: fixed;
+    width: 400px;
+    height: 600px;
+    background: #178855;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    border-top: 0.1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    visibility: hidden;
+}
+.signlog{
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 2000;
+    margin-top: 100px;
+    position: fixed;
+    width: 400px;
+    height: 600px;
+    background:  #178855;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    border-top: 0.1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    visibility: hidden;
+}
+#heading{
+    margin-top: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    font-size: large;
+    border-radius: 10px;
+    border: 0.1px solid;
+    padding-left: 10px;
+    background-color: rgb(232, 238, 232);
+}
+.shift{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#submit{
+    background-color:white;
+    color: #178855;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 0;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color:#00BF63;
+    color: white;
+}
+.cancel{
+    color: 222222;
+    font-weight: bold;
+}
+.cancel:hover{
+    color: red;
+}
+.logsign-bg{
+    z-index: 1001;
+    background-color:whitesmoke ;
+    opacity: 90%;
+    position: fixed;
+    height: 1000px;
+    width: 8000px;
+    visibility: hidden;
+}
+@media only screen and (max-width: 1000px) {
+    .why{
+        visibility: hidden;
+        width: 0;
+    }
+    .notwithlogo{
+        margin-right: 0;
+    }
+    .login{
+        visibility: hidden;
+        width: 0;
+    }
+    .menu{
+        visibility: visible;
+        width: 50px;
+        height:30px ;
+    }
+    .menu-bar{
+        visibility: visible;
+        background-color: black;
+        width: 20px;
+        height: 3px;
+        border-radius: 10px;
+    }
+    .half1{
+        width: 290px;
+    }
+    .tag{
+        font-size: 60px;
+    }
+    .half2{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 750px){
+    .hero-contan{
+        flex-direction: column-reverse;
+        margin-top: 5vmax;
+        height: 800px;
+    }
+    .half1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        width: 300px;
+        height: 536px;
+        margin-top: 0;
+    }
+    .tag{
+        font-size: xx-large;
+    }
+    
+    .line{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .half2{
+        width: 300px;
+    }
+    footer{
+        width: 100%;
+    }
+    .social{
+        width: 100px;
+    }
+    .copy-right-div{
+        width: 100%;
+        flex-direction: column;
+    }
+    .right-side-copy-right-div{
+        margin-top: 20px;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .left-copy-right-div{
+        text-align: center;
+    }
+    .logsign{
+        margin-top: 50px;
+        width: 300px;
+        height: 500px;
+    }
+    .signlog{
+        margin-top: 50px;
+        width: 300px;
+        height: 500px;
+    }
+    input{
+        width: 250px;
+    }
+}
